@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Volume",
+    "version": "1.0.0",
+    "description": "Volume control",
+
+    "icons": {
+        "16": "icon/icon.png"
+    },
+
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabCapture"
+    ],
+
+    "content_scripts": {
+        "matches": "*://*/*"
+    },
+
+    "browser action": {
+        "default_popup": "popup/index.html"
+    },
+
+    "background": {
+	    "scripts": [
+            "bg.js"
+        ]
+    }
+}

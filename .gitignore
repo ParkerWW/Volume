@@ -1,0 +1,4 @@
+#ignore tests
+web-ext-artifacts/
+test*
+This.txt
